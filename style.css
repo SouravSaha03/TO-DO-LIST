@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+}
+
+.container {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  margin: auto;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#addTaskBtn {
+  margin-left: 10px;
+  padding: 15px;
+  font-size: 16px;
+  background: #00c6ff;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+#addTaskBtn:hover {
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #d3d3d3;
+}
+
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
